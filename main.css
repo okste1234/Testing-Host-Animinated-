@@ -1,36 +1,100 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    background: #444;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
 }
+
+.sky {
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient( #fff, #f3efe9);
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.sky img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+#mountain{
+  width: 60rem;
+  bottom: -7%;
+}
+
+#cloud{
+  min-width: 30%;
+  bottom: 60%;
+  left: 0%;
+}
+
+#javascript {
+  width: 5%;
+  bottom: 30%;
+  left: 20%;
+}
+
+#react {
+  width: 5%;
+  bottom: 30%;
+  left: 26%;
+}
+
+#mern {
+  width: 5%;
+  bottom: 30%;
+  left: 32%;
+}
+
+#balloon {
+  width: 15%;
+  bottom: 10%;
+}
+
+.details{
+  height: 400px;
+  background-color: #72bd3d;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 
 h1 {
-    font-size: 60px;
+  color:#fff;
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  text-align: center;
 }
 
-h3 {
-    font-size: 32px;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+.details p{
+  position: absolute;
+}
+.footer{
+  bottom: 0;
+  color:#fff;
+  font-size: 20px;
 }
 
-h5 {
-    font-size: 22px;
+
+@media screen and (max-width: 568px){
+  #cloud{
+    bottom: 80%;
+  }
+
+  #balloon{
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  .details{
+  padding: 10px;
 }
 
-.banner h1, .banner h3, .banner h5 {
-    margin: 0;
-    text-shadow: 2px 2px 6px #000;
-    text-align: center;
-    padding: .5rem 0;
-}
-
-.banner {
-    color: white;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
